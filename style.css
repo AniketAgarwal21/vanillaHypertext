@@ -3,16 +3,56 @@ html{
 }
 body{
     font-family: 'Raleway', sans-serif;
+    background-color: whitesmoke;
 }
 nav{
     padding: 3%;
     box-shadow: 0px 0px 9px 1px rgb(195, 195, 195);
+    
 }
 .navbar-brand{
     font-size: 200%;
 }
-
 a{
     color: black !important;
     text-decoration: none !important;
+}
+#home{
+    height: 90vh;
+    width: 100%;    
+}
+#section1{
+    width: 55%; 
+    margin-top: 10%;
+}
+#section1 h1{
+    font-weight: 900; 
+    font-size: 400%;
+    color: #2f238d;
+}
+#section1 h5{
+    color: rgb(14, 14, 14); 
+    line-height: 25px; 
+    font-weight: lighter; 
+    text-align: justify;
+}
+@media screen and (max-width: 950px){
+    #section1{
+        width: 75%;
+        margin-top: 15%;
+    }
+    #section1 h1{
+        font-size: 350%;
+    }
+    #section1 h5{
+        font-size: 120%;
+    }
+    #section1 h3{
+        font-size: 140%;
+    }
+}
+@media screen and (max-width: 1100px){
+    #section1{
+        margin-top: 20vh;
+    }
 }

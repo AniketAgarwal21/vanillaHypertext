@@ -23,6 +23,7 @@ a{
     height: 100vh;
     display: flex;
     flex-direction: row;
+
 }
 #section1{
     width: 100%;
@@ -31,15 +32,16 @@ a{
     position: absolute;
     overflow: hidden;
     display: flex;
-    
+
     
 }
 #section1 h2{
     float: right;
-    margin-left: 10%;
-    margin-top: 7%;
+    font-family: 'Lato', sans-serif;
+    margin-left: 5%;
+    margin-top: 5%;
     width: 55%;
-    font-size: 350%;
+    font-size: 400%;
     z-index: 800;
 }
 #section1 h1{
@@ -71,19 +73,45 @@ a{
     object-fit: cover;
     right: 0;
     position: absolute;
+    height: 100%;
     width: 40%;
+}
+@media (max-width:1291px){
+    #section1 h2{
+        margin-top: 3%;
+        transition: 0.5s;
+    }
 }
 @media (max-width:991px){
     #section1 h1{
-        font-size: 1000%;
-        line-height: 80%;
+        font-size: 1200%;
+        line-height: 82%;
         transition: 0.5s;
 
     }
     #section1 h2{
-        font-size: 250%;
+        font-size: 275%;
         transition: 0.5s;
     }
+    #section1{
+        height: 55vh;
+        transition: 0.5s;
+    }
+}
+@media (max-width:691px){
+    #section1 h1{
+        font-size: 950%;
+        line-height: 80%;
+        transition: 0.5s;
+        width: 50%;
+    }
+    #section1 h2{
+        font-size: 180%;
+        transition: 0.5s;
+        margin-left: 2%;
+        margin-top: 10%;
+    }
+
 }
 /* HOME SECTION CSS ENDS*/
 

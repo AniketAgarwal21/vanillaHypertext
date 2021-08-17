@@ -77,6 +77,12 @@ a{
     #section1 h1{
         font-size: 1000%;
         line-height: 80%;
+        transition: 0.5s;
+
+    }
+    #section1 h2{
+        font-size: 250%;
+        transition: 0.5s;
     }
 }
 /* HOME SECTION CSS ENDS*/

@@ -95,13 +95,15 @@ a{
 
 /* TESTIMONIALS CSS */
 #test{
-    height: 80vh;
+    padding-bottom: 5%;
+    padding-top: 3%;
     width: 100%;
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
+
 .cards{
     position: relative;
     width: 430px;
@@ -115,10 +117,10 @@ a{
     color: white;
     box-shadow: 0px 0px 12px 3px rgb(170, 170, 170);
 }
-#luke{
-    background: linear-gradient(135deg,#0077B6,#00B4D8);
+.first{
+    background: linear-gradient(135deg,#000280,#00B4D8);
 }
-#poe{
+.second{
     background: linear-gradient(135deg,#0063c0,#90E0EF);
 }
 .cards h2{
@@ -151,37 +153,16 @@ a{
 
 @media(max-width:991px){
     .cards{
-        position: relative;
-        width: 330px;
-        max-width: 430px;
-        transition: 0.5s;
-        align-items: flex-start;
-        padding: 25px;
+        width: 480px;
+        transition: 0.5s
     }
-    .cards:hover {
-        height: 430px;
-    }
-    .cards:hover img{
-        left: 45%;
-        height: 300px;
-        bottom: -5%;
-    }
-    #poe:hover img{
-        left: 45%;
-        height: 300px;
-        bottom: -8%;
-    }
-    .review{
-        width: 100%;
-        left: 0%;
-    }
+    
 }
-@media(max-width:420px){
+@media(max-width:490px){
     .cards{
-        padding: 20px;
-    }
-    .cards:hover img{
-        height: 250px;
+        width: 360px;
+        height: 260px;
+        transition: 0.5s;
     }
 }
 /* TESTIMONIALS CSS ENDS*/

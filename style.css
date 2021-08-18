@@ -25,6 +25,15 @@ a{
     flex-direction: row;
 
 }
+.circle{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #00B4D8;
+    clip-path: circle(600px at left -90px);
+}
 #section1{
     width: 100%;
     height: 80vh;
@@ -38,7 +47,7 @@ a{
 #section1 h2{
     float: right;
     font-family: 'Lato', sans-serif;
-    margin-left: 5%;
+    margin-left: 8%;
     margin-top: 5%;
     width: 55%;
     font-size: 400%;
@@ -79,6 +88,7 @@ a{
 @media (max-width:1291px){
     #section1 h2{
         margin-top: 3%;
+        margin-left: 5%;
         transition: 0.5s;
     }
 }
@@ -97,6 +107,9 @@ a{
         height: 55vh;
         transition: 0.5s;
     }
+    .circle{
+        clip-path: circle(400px at left -20px);
+    }
 }
 @media (max-width:691px){
     #section1 h1{
@@ -110,6 +123,9 @@ a{
         transition: 0.5s;
         margin-left: 2%;
         margin-top: 10%;
+    }
+    .circle{
+        clip-path: circle(250px at left -20px);
     }
 
 }

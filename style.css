@@ -213,7 +213,7 @@ a{
 
 /* FEATURES CSS */
 #features{
-    width: 70vw;
+    width: 100%;
     position: relative;
     justify-items: center;
     align-items: center;
@@ -221,6 +221,9 @@ a{
     font-size: 130%;
     height: 80vh;
     padding-bottom: 5%;
+}
+#all-tabs{
+    width: 70vw;
 }
 .tab-pane{
     padding-top: 5%;
@@ -233,6 +236,34 @@ a{
 }
 .nav-tabs li{
     margin-right: 3%;
+    outline: none !important;
 }
-
+td {
+    text-align: center;
+    /* padding: 8px; */
+   }
+@media(max-width:750px){
+    #features{
+        font-size: 110%;
+    }
+    #all-tabs{
+        width: 85vw;
+    }
+}
+@media(max-width:650px){
+    #features{
+        font-size: 100%;
+    }    
+}
+@media(max-width:487px){
+    #all-tabs{
+        width: 92vw;
+    }
+    #menu2{
+        width: 96vw;
+    }
+    #features{
+        font-size: 95%;
+    } 
+}
 /* FEATURES CSS ENDS */
